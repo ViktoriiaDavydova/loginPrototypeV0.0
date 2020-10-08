@@ -1,8 +1,10 @@
 {
+  "homepage": "https://viktoriiadavydova.github.io/loginPrototypeV0.0/",
   "name": "pics",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "-": "0.0.1",
     "@syncfusion/ej2-base": "^17.4.51",
     "@syncfusion/ej2-react-buttons": "^17.4.51",
     "@syncfusion/ej2-react-calendars": "^17.4.51",
@@ -13,6 +15,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.1",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^3.1.0",
     "jquery": "^1.9.1",
     "moment": "^2.24.0",
     "react": "^16.13.0",
@@ -24,9 +27,12 @@
     "react-scripts": "3.4.1",
     "react-select": "^3.0.8",
     "react-svg": "^11.0.9",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "save-dev": "0.0.1-security"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
